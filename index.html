@@ -3,99 +3,239 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Academic Website</title>
+    <title>Himani Deshpande </title>
+    <!-- Uncomment the style you want to use -->
+
+    <!-- Minimalist Style -->
+      
     <style>
+        /* Minimalist Style */
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f4f4f4;
+            background-color: #f9f9f9;
             margin: 0;
             padding: 0;
         }
-        .container {
-            max-width: 1000px;
-            margin: auto;
-            padding: 20px;
-            background: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        header, footer {
+        header {
+            background-color: #333;
+            color: #fff;
             text-align: center;
-            padding: 10px 0;
-            background: #333;
-            color: white;
+            padding: 1rem;
         }
-        h2 {
-            color: #333;
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
         }
         .section {
             margin-bottom: 40px;
+       
         }
-        .section-title {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-            border-bottom: 2px solid #333;
-            padding-bottom: 5px;
+        .section img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
         }
-        ul {
-            list-style: none;
-            padding: 0;
+        .publication, .project {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
         }
-        li {
-            margin-bottom: 10px;
+        .publication img, .project img {
+            width: 200px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 5px;
         }
-        .footer {
-            font-size: 0.8em;
-            color: #777;
+        /* Flexbox styling for the About Me section */
+    #about {
+        display: flex;
+        align-items: center;
+        max-width: 800px;
+        gap: 20px; /* Space between the image and text */
+    }
+    .bio-photo {
+        width: 200px; /* Set the desired width */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 50%;
+        flex-shrink: 0; /* Prevent the image from shrinking */
+    }
+    #about p {
+        flex: 1; /* Allow the text to take up remaining space */
+    }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 20px;
         }
+        .links {
+        margin-bottom: 15px; /* Space below the links */
+        font-size: 1em; /* Adjust the font size if needed */
+    }
+    .links a {
+        text-decoration: none;
+        color: #007acc; /* Change this color to match your site's theme */
+        margin-right: 10px; /* Space between the links */
+    }
+    .links a:hover {
+        text-decoration: underline; /* Optional: Underline on hover for better visibility */
+    }
     </style>
+       
+
+
+    
 </head>
 <body>
     <header>
-        <h1>Your Name</h1>
-        <p>Researcher in Human-Computer Interaction, Digital Fabrication, and Sustainability</p>
+        <h1>Himani Deshpande</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <!-- <li><a href="#projects">Projects</a></li> -->
+                <li><a href="#news">News</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <div class="container">
+    <main>
         <!-- About Me Section -->
-        <div class="section" id="about">
-            <h2 class="section-title">About Me</h2>
-            <p>Welcome to my academic website! I am a researcher focusing on the intersection of Human-Computer Interaction, Digital Fabrication, and Sustainability. My work emphasizes hybrid craft and digital fabrication techniques, sustainable 3D printing practices, and circular material reuse. I aim to explore how technology and traditional craft practices can co-evolve to promote more sustainable design methodologies.</p>
-        </div>
+        <section id="about" class="section">
+            <!-- Links Section -->
+            <div class="links">
+                <a href="mailto:hdeshpande11@tamu.edu" target="_blank">Contact</a> |
+                <a href="pdfs/CV_Himani_10Oct24.pdf" target="_blank">CV</a> |
+                <a href="https://scholar.google.com/citations?user=XOYt2eEAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a> |
+                <a href="https://twitter.com/DeshpandeHimani" target="_blank">Twitter</a> |
+                <a href="https://linkedin.com/in/himanideshpande" target="_blank">LinkedIn</a>
+                <p>I am a researcher focusing on Human-Computer Interaction, Digital Fabrication, and Sustainability. 
+                    My work emphasizes hybrid craft and digital fabrication techniques, sustainable 3D printing practices, and circular material reuse.</p>
+            </div>
+            <img src="images/himani.jpg" alt="Himani Deshpande" class="bio-photo">
+            
+        </section>
+
+         <!-- News Section -->
+         <section id="news" class="section">
+            <h2>News</h2>
+            <ul>
+                <li><strong>October, 2024</strong> - Presenting the TOCHI paper "Unmake to Remake: Materiality-driven Rapid Prototyping" at UIST'24.</li>
+                <li><strong>August, 2024</strong> - Serving on the Program Committee for TEI'25</li>
+                <li><strong>August, 2024</strong> - Successfully finished internship as an Associate Principal at Accenture Labs .</li>
+                <li><strong>May, 2024</strong> - Presented "Reconfigurable Interfaces by Shape Change and Embedded Magnets" at CHI'24.</li>
+                <li><strong>May, 2024</strong> - Hosted a workshop "Sustainable Unmaking: Designing for Biodegradation, Decay, and Disassembly" at CHI'24.</li>
+            </ul>
+        </section>
 
         <!-- Publications Section -->
-        <div class="section" id="publications">
-            <h2 class="section-title">Publications</h2>
-            <ul>
-                <li><strong>Title of Paper 1</strong> - <em>Journal/Conference Name</em>, Year. <a href="link-to-paper" target="_blank">[PDF]</a></li>
-                <li><strong>Title of Paper 2</strong> - <em>Journal/Conference Name</em>, Year. <a href="link-to-paper" target="_blank">[PDF]</a></li>
-                <!-- Add more publications as needed -->
-            </ul>
-        </div>
+        <section id="publications" class="section">
+            <h2>Publications</h2>
+            <div class="publication">
+                <img src="images/tochi.png" alt="Unmake">
+                <div>
+                    <h3>Unmake to Remake: Materiality-driven Rapid Prototyping</h3>
+                    <p><em> <u> Himani Deshpande</u>, Haruki Takahashi, Jeeeun Kim.</em></p>
+                    <p>ACM Transactions on Computer-Human Interaction. August 2024.</p>
+                    <!-- <p>Brief description of the publication.</p> -->
+                    <a href="pdfs/tochi_unmake.pdf" target="_blank">[Download PDF]</a>
+                </div>
+            </div>
+            <div class="publication">
+                <img src="images/morphmag.png" alt="Morphmag">
+                <div>
+                    <h3>Reconfigurable Interfaces by Shape Change and Embedded Magnets</h3>
+                    <p><em> <u> Himani Deshpande</u>, Bo Han, Kongpyung Moon, Andrea Bianchi, Clement Zheng, Jeeeun Kim.</em></p>
+                    <p>Proceedings of the CHI Conference on Human Factors in Computing Systems. 2024.</p>
+                    <!-- <p>Brief description of the publication.</p> -->
+                    <a href="pdfs/morphmag.pdf" target="_blank">[Download PDF]</a>
+                </div>
+            </div>
 
-        <!-- Ongoing Projects Section -->
-        <div class="section" id="projects">
-            <h2 class="section-title">Ongoing Projects</h2>
-            <ul>
-                <li><strong>Project Name 1</strong> - Description of the project and its goals.</li>
-                <li><strong>Project Name 2</strong> - Description of the project and its current status.</li>
-                <!-- Add more projects as needed -->
-            </ul>
-        </div>
+            <div class="publication">
+                <img src="images/fab4d.jpg" alt="fab4d">
+                <div>
+                    <h3>Fab4D: an accessible hybrid approach for programmable shaping and shape changing artifacts</h3>
+                    <p><em> <u> Himani Deshpande</u>,Clement Zheng, Courtney Starrett, Jinsil Hwaryoung Seo, Jeeeun Kim.</em></p>
+                    <p>Proceedings of the Sixteenth International Conference on Tangible, Embedded, and Embodied Interaction. 2022.</p>
+                    <!-- <p>Brief description of the publication.</p> -->
+                    <a href="pdfs/fab4d-TEI22.pdf" target="_blank">[Download PDF]</a>
+                </div>
+            </div>
 
-        <!-- News Section -->
-        <div class="section" id="news">
-            <h2 class="section-title">News</h2>
-            <ul>
-                <li><strong>Month, Year</strong> - News item or update about your research or events.</li>
-                <li><strong>Month, Year</strong> - Another news item or update.</li>
-                <!-- Add more news items as needed -->
-            </ul>
-        </div>
-    </div>
+            <div class="publication">
+                <img src="images/multi-ttach.png" alt="multittach">
+                <div>
+                    <h3>Multi-ttach: Techniques to Enhance Multi-material Attachments in Low-cost FDM 3D Printing</h3>
+                    <p><em>Nahyun Kwon, <u> Himani Deshpande</u>, Md Kamrul Hasan, Aryabhat Darnal, Jeeeun Kim.</em></p>
+                    <p>Proceedings of the 6th Annual ACM Symposium on Computational Fabrication. 2021.</p>
+                    <!-- <p>Brief description of the publication.</p> -->
+                    <a href="pdfs/Multittach_SCF21.pdf" target="_blank">[Download PDF]</a>
+                </div>
+            </div>
+
+            <div class="publication">
+                <img src="images/escapeloom.png" alt="escapeloom">
+                <div>
+                    <h3>Escapeloom: Fabricating new affordances for hand weaving</h3>
+                    <p><em> <u> Himani Deshpande</u>, Haruki Takahashi, Jeeeun Kim.</em></p>
+                    <p>Proceedings of the CHI Conference on Human Factors in Computing Systems. 2021.</p>
+                    <!-- <p>Brief description of the publication.</p> -->
+                    <a href="pdfs/EscapeLoom-CHI21.pdf" target="_blank">[Download PDF]</a>
+                </div>
+            </div>
+
+            <div class="publication">
+                <img src="images/replan.png" alt="hdpe">
+                <div>
+                    <h3>Upcycling discarded HDPE plastic bags for creative exploration in product design</h3>
+                    <p><em> <u> Himani Deshpande</u>, Jin Yu, Akash Talyan, Noah Posner, Clement Zheng, HyunJoo Oh.</em></p>
+                    <p>DRS2022: Bilbao. 2022.</p>
+                    <!-- <p>Brief description of the publication.</p> -->
+                    <a href="pdfs/upcyclinghdpe.pdf" target="_blank">[Download PDF]</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ongoing Projects Section
+        <section id="projects" class="section">
+            <h2>Ongoing Projects</h2>
+            <div class="project">
+                <img src="images/project1.jpg" alt="Project 1">
+                <div>
+                    <h3>Project Name 1</h3>
+                    <p>Description of the project and its goals.</p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/project2.jpg" alt="Project 2">
+                <div>
+                    <h3>Project Name 2</h3>
+                    <p>Description of the project and its current status.</p>
+                </div>
+            </div>
+        </section> -->
+
+       
+    </main>
 
     <footer>
-        <p class="footer">&copy; 2024 Your Name. All rights reserved.</p>
+        <p>&copy; 2024 Himani Deshpande. All rights reserved.</p>
     </footer>
 </body>
 </html>
